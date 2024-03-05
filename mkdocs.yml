@@ -1,0 +1,11 @@
+site_name: NexaORM
+site_url: https://example.com/
+nav:
+
+  - Get Started : index.md
+
+theme:
+  name: material
+  highlightjs: true
+  hljs_languages:
+    -php
