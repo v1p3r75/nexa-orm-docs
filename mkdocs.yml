@@ -3,6 +3,12 @@ site_url: https://example.com/
 nav:
 
   - Get Started : index.md
+  - Preview : preview.md
+  - Entities : entities.md
+  - Attributes : entities.md
+  - Models : models.md
+  - API Documentation : api_docs.md
+  - Contributing : contributing.md
 
 theme:
   name: material
