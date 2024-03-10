@@ -1,8 +1,10 @@
-## NexaORM: Collections
+# **Collections**
+
+## Introduction
 
 Collections are fundamental components in NexaORM, representing a group of entities retrieved from the database. They provide a convenient way to work with multiple entities at once and offer various methods for manipulating and iterating through the data.
 
-**The `Collection` Class**
+## The `Collection` Class
 
 NexaORM provides a built-in `Collection` class that implements the `Countable` and `ArrayAccess` interfaces. This class offers a set of methods for working with collections of entities:
 
@@ -25,16 +27,16 @@ NexaORM provides a built-in `Collection` class that implements the `Countable` a
 - **`keys()`:** Returns an array containing the keys (usually primary keys) from the collection.
 - **`isEmpty()`:** Checks if the collection is empty.
 
-**Benefits of Collections**
+## Benefits of Collections
 
 - **Efficient Data Handling:** Collections provide a streamlined way to manage and manipulate multiple entities retrieved from database queries.
 - **Simplified Iterations:** Collection methods like `all()`, `filter()`, and `map()` allow you to easily iterate through entities and perform operations on them.
 - **Improved Code Readability:** Using collections keeps your code clean and focused on data processing rather than low-level array manipulations.
 
-**Example Usage:**
+## Example Usage
 
 ```php
-$users = User::all(); // Retrieve all users
+$users = User::findAll(); // Retrieve all users as Collection
 
 if ($users->isEmpty()) {
   // Handle empty collection

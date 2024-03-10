@@ -1,19 +1,21 @@
-**NexaORM: Entities**
+# **Entities**
 
-**Introduction**
+## Introduction
 
 Entities are the foundation of object-relational mapping (ORM) in NexaORM. They represent database tables and map their columns to properties within your PHP classes. This approach simplifies database interactions by allowing you to work with objects instead of raw SQL.
 
-**Creating Entities**
+## Creating Entities
 
-1. **Define an Entity Class:**
-   - Create a PHP class and decorate it with the `#[Entity]` attribute to mark it as an entity.
+**Define an Entity Class:**
 
-2. **Properties:**
-   - Declare properties within the class to represent database table columns.
-   - Use appropriate NexaORM attributes to define data types, constraints, relationships, and other aspects.
+Create a PHP class and decorate it with the `#[Entity]` attribute to mark it as an entity.
 
-**Common NexaORM Attributes for Entities**
+**Properties:**
+
+   1. Declare properties within the class to represent database table columns.
+   2. Use appropriate NexaORM attributes to define data types, constraints, relationships, and other aspects.
+
+## Common NexaORM Attributes for Entities
 
 - **`#[PrimaryKey]`:** Marks a property as the primary key of the table (can be used only once per entity).
 - **`#[AutoIncrement(true)]` (with `#[PrimaryKey]`):** Enables auto-incrementing for the primary key.
@@ -31,7 +33,7 @@ Entities are the foundation of object-relational mapping (ORM) in NexaORM. They 
 - **`#[DateAndTime]`:** Defines a property to hold a date and time value.
 - **`#[DefaultValue(Nexa::DATETIME_NOW)]`:** Sets the default value of a `#[DateAndTime]` property to the current date and time.
 
-**Example Entity:**
+## Example Entity
 
 ```php
 namespace Nexa\Test\Entities;
@@ -75,15 +77,15 @@ class UserEntity
 }
 ```
 
-**Benefits of Using Entities**
+## Benefits of Using Entities
 
 - **Simplified Database Interactions:** Work with objects instead of raw SQL queries.
 - **Improved Code Readability:** Code becomes more self-documenting due to descriptive properties and attributes.
 - **Reduced Errors:** Type checking and constraints help prevent errors and maintain data integrity.
 
-**Additional Considerations**
+## Additional Considerations
 
-- Refer to the NexaORM documentation for a complete list of available attributes.
+- Refer to the NexaORM documentation for a complete list of [available attributes](attributes.md).
 - Consider using data validation techniques to ensure data integrity before saving entities.
 
 By effectively utilizing entities in your NexaORM projects, you'll enhance database interaction clarity, maintainability, and data integrity.

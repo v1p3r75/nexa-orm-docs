@@ -1,4 +1,6 @@
-## NexaORM: Configuration
+# **Configuration**
+
+## Introduction
 
 NexaORM allows for centralized configuration of your database settings in a dedicated file, `database.php`. This approach offers several advantages:
 
@@ -6,7 +8,10 @@ NexaORM allows for centralized configuration of your database settings in a dedi
 - **Simplified Environment Management:** Enables configuration of different environments (development, production, etc.) with specific files.
 - **Configuration Sharing:** Facilitates sharing of database configuration across multiple applications using NexaORM.
 
+## Configuration
+
 **Sample `database.php` Configuration File:**
+
 
 ```php
 <?php
@@ -16,7 +21,7 @@ return [
     'host' => 'localhost',
     'user' => 'root',
     'password' => '',
-    'dbname' => 'floky',
+    'dbname' => 'nexa',
     'driver' => 'pdo_mysql',
 
     'options' => [
@@ -75,17 +80,17 @@ class User extends Model
 }
 ```
 
-**Benefits of Inheritance:**
+## Benefits of Inheritance
 
 - **Reduced Redundant Code:** Eliminates the need to repeat database configuration in each model.
 - **Improved Consistency:** Ensures all models utilize the same configuration.
 - **Easier Maintenance:** Allows configuration changes in a single location.
 
-**Conclusion:**
+## Conclusion
 
 Leveraging a centralized configuration file and inheriting from NexaORM's `Model` class provides an efficient approach to managing database configuration within your PHP applications. This approach enhances code readability, maintainability, and consistency.
 
-**Key Takeaways:**
+## Key Takeaways
 
 - Define database connection parameters in `database.php`.
 - Override the `setConfigPath()` method in your model class to load configuration from `database.php`.
