@@ -3,11 +3,12 @@ site_url: https://example.com/
 nav:
 
   - Get Started : index.md
-  - Preview : preview.md
+  - Configuration : configuration.md
   - Entities : entities.md
-  - Attributes : entities.md
+  - Attributes : attributes.md
   - Models : models.md
-  - API Documentation : api_docs.md
+  - Collections : collections.md
+  - Migrations : migrations.md
   - Contributing : contributing.md
 
 theme:
