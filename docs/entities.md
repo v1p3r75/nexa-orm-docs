@@ -36,6 +36,8 @@ Create a PHP class and decorate it with the `#[Entity]` attribute to mark it as 
 ## Example Entity
 
 ```php
+<?php
+
 namespace Nexa\Test\Entities;
 
 use DateTime;

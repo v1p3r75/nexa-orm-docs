@@ -36,6 +36,8 @@ NexaORM provides a built-in `Collection` class that implements the `Countable` a
 ## Example Usage
 
 ```php
+<?php
+
 $users = User::findAll(); // Retrieve all users as Collection
 
 if ($users->isEmpty()) {

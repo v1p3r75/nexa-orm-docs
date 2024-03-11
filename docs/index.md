@@ -63,7 +63,8 @@ composer require v1p3r75/nexa-orm
 
 ## Preview
 
-```php
+```php title="UserEntity.php"
+<?php
 
 // Define entity
 
@@ -92,7 +93,10 @@ class UserEntity
 }
 ```
 
-```php
+
+```php title="User.php"
+
+<?php
 
 // Create a model for database interation
 

@@ -40,6 +40,8 @@ NexaORM attributes play a vital role in defining the characteristics and behavio
 ## Example Attributes
 
 ```php
+<?php
+
 #[Entity]
 class UserEntity
 {

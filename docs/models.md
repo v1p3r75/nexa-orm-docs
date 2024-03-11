@@ -27,6 +27,8 @@ A typical NexaORM model inherits from the `Nexa\Models\Model` class and defines 
 ## Example Model
 
 ```php
+<?php
+
 namespace Nexa\Test\Models;
 
 use Nexa\Models\Model;
