@@ -1,5 +1,7 @@
 # **Get Started**
 
+![NexaORM Banner](assets/banner.png)
+
 ## Introduction
 
 **NexaORM** is a modern PHP Object-Relational Mapping (ORM) library designed to simplify database interactions and streamline the development of PHP applications. It provides a lightweight and intuitive way to manage database entities, relationships, and queries.
