@@ -4,7 +4,7 @@ site_author: Fortunatus KIDJE (v1p3r75)
 site_description: >-
   NexaORM is a modern PHP Object-Relational Mapping (ORM) library designed
   to simplify database interactions and streamline the development of PHP applications. 
-
+site_dir: build
 
 repo_name: NexaORM
 repo_url: https://github.com/v1p3r75/NexaORM
